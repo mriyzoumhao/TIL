@@ -214,22 +214,6 @@
 
 //class Program
 //{
-//    // ABC049C - 白昼夢　
-//    static void Main()
-//    {
-//        List<string> list = new List<string> { "dream", "dreamer", "erase", "eraser" };
-//        string s = Console.ReadLine();
-//        string t = string.Empty;
-
-//        s = s.Reverse().ToString();
-
-//        Console.WriteLine(ret);
-//    }
-//}
-
-
-//class Program
-//{
 //    static void Main()
 //    {
 //        string[] s = Console.ReadLine().Split(" ");
@@ -292,53 +276,81 @@
 //    }
 //}
 
+//class Program
+//{
+//    static void Main()
+//    {
+//        string[] inputStr = Console.ReadLine().Split(" "); // 住人/2　知っている人
+//        int junin = int.Parse(inputStr[0]); // 住人=2y
+//        junin *= 2;
+//        int uwasa = int.Parse(inputStr[1]);
+//        int nissuu = 0;
+//        int uwasaHasei = uwasa;
+//        List<string> retStr = new List<string>();
+
+//        List<int> juninLst = new List<int>();
+//        for (int i = 1; i <= junin; i++)
+//        {
+//            juninLst.Add(i);
+//        }
+
+//        // 日数
+//        while (junin > uwasaHasei)
+//        {
+//            retStr.Add(GetHanashi(nissuu, uwasaHasei, new List<int>(juninLst)));
+//            uwasaHasei += uwasaHasei;
+//            nissuu++;
+//        }
+
+//        Console.WriteLine(nissuu);
+//        foreach(string str in retStr)
+//        {
+//            Console.WriteLine(str);
+//        }
+//    }
+
+//    static string GetHanashi(int nissuu, int uwasaHasei, List<int> lst)
+//    {
+//        int temp;
+//        int cnt;
+//        bool overFlg = false;
+//        for(cnt = 0; cnt < uwasaHasei; cnt++)
+//        {
+//            if(cnt + uwasaHasei > lst.Count() - 1) 
+//            {
+//                overFlg = true;
+//                break; 
+//            }
+//            temp = lst[cnt];
+//            lst[cnt] = lst[cnt + uwasaHasei];
+//            lst[cnt + uwasaHasei] = temp;
+//        }
+
+//        if (!overFlg) { cnt = cnt * 2; }
+
+//        for(int j = cnt; j < lst.Count() - 1; j += 2)
+//        {
+//            if (overFlg && j + cnt >= lst.Count()) { break; }
+
+//            temp = lst[j];
+//            lst[j] = lst[j + 1];
+//            lst[j + 1] = temp;
+//        }
+//        return String.Join(" ", lst);
+//    }
+//}
+
 class Program
 {
+    // ABC049C - 白昼夢　
     static void Main()
     {
-        string[] lst = Console.ReadLine().Split(" ");
-        int junin = int.Parse(lst[0]);
-        junin = junin * 2;
-        int uwasa = int.Parse(lst[1]);
-        int nissuu = 0;
-        int uwasaHasei = uwasa;
-        List<string> retStr = new List<string>();
+        List<string> list = new List<string> { "dream", "dreamer", "erase", "eraser" };
+        string s = Console.ReadLine();
+        string t = string.Empty;
 
-        List<int> juninLst = new List<int>();
-        for (int i = 1; i <= junin; i++)
-        {
+        s = s.Reverse().ToString();
 
-            juninLst.Add(i);
-        }
-
-        // 日数
-        while (junin > uwasaHasei)
-        {
-            GetHanashi(nissuu, uwasaHasei, juninLst);
-            uwasaHasei += uwasaHasei;
-            nissuu++;
-        }
-
-        Console.WriteLine(nissuu);
-    }
-
-    static string GetHanashi(int nissuu, int uwasaHasei, List<int> juninLst)
-    {
-        int temp;
-        for(int i = 0; i < uwasaHasei; i++)
-        {
-            temp = juninLst[i];
-            juninLst[i] = juninLst[i + uwasaHasei];
-            juninLst[i + uwasaHasei] = temp;
-        }
-        for(int j = uwasaHasei * 2; j < juninLst.Count; j++)
-        {
-            temp = juninLst[j];
-            juninLst[j] = juninLst[j + 1];
-            juninLst[j + 1] = temp;
-            j += 2;
-        }
-        return String.Join(" ", juninLst);
+        Console.WriteLine(ret);
     }
 }
-
