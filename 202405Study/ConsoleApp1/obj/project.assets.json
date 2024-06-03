@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\m-arai\\Desktop\\_★自分の勉強用\\TIL\\202405Study\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectUniqueName": "C:\\Users\\m-arai\\Desktop\\project\\TIL\\202405Study\\ConsoleApp1\\ConsoleApp1.csproj",
       "projectName": "ConsoleApp1",
-      "projectPath": "C:\\Users\\m-arai\\Desktop\\_★自分の勉強用\\TIL\\202405Study\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectPath": "C:\\Users\\m-arai\\Desktop\\project\\TIL\\202405Study\\ConsoleApp1\\ConsoleApp1.csproj",
       "packagesPath": "C:\\Users\\m-arai\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\m-arai\\Desktop\\_★自分の勉強用\\TIL\\202405Study\\ConsoleApp1\\obj\\",
+      "outputPath": "C:\\Users\\m-arai\\Desktop\\project\\TIL\\202405Study\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\m-arai\\AppData\\Roaming\\NuGet\\NuGet.Config",
